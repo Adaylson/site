@@ -37,7 +37,7 @@ export default function Grafico1() {
     };
 
     const labels = ['09:00', '09:30', '10:00', '10:30', '11:00', '11:30', '12:00', '13:00', '13:30', '14:00',]
-    const fluxo2 = [2, 4, 5, 3, 4, 7, 8, 5, 3, 2]
+    const fluxo2 = [40, 80, 100, 60, 80, 140, 160, 100, 60, 40]
 
     const data =  {
         labels,
@@ -65,28 +65,23 @@ export default function Grafico1() {
               'black',
               'rgba(255, 159, 64, 0.2)',
             ],
-            borderColor: [
-              'rgba(255, 99, 132, 1)',
-              'rgba(54, 162, 235, 1)',
-              'rgba(255, 206, 86, 1)',
-              'rgba(75, 192, 192, 1)',
-              'rgba(153, 102, 255, 1)',
-              'rgba(255, 159, 64, 1)',
-            ],
-            borderWidth: 1,
           },
         ],
       };
 
     return(
         <main>
-            <h1> Grafico 1 </h1>
+            <h1> Fluxo de Pessoas </h1>
+            <h3> Quantidade de pessoas por 30 minutos</h3>
             
             <div className='grafico'> 
 
                 <Bar  options={options} data={data} />
 
             </div>
+
+            <h1> Faixa Etaria  </h1>
+            <h3> Idade de pessoas inscritas no Site</h3>
 
             <div className='grafico1'> 
 
